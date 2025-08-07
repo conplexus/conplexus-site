@@ -29,10 +29,9 @@ export default function Home() {
       <section id="about" className="max-w-3xl mx-auto text-center space-y-4">
         <h2 className="text-3xl font-semibold">About Conplexus™</h2>
         <p className="text-slate-300">
-          Conplexus™ LLC is a technology-forward healthcare company focused not
-          on finding the next best thing, rather taking what we have and solving
-          operational, clinical, and educational challenges through automation,
-          intelligent design, and scalable solutions.
+          Conplexus LLC is a software and innovation firm focused on simplifying complex systems through tailored digital tools.
+          Currently in development, Conplexus is building its first SaaS product to support curriculum mapping and accreditation processes in academic institutions. Rooted in healthcare, pharmacy, and education, our mission is to create scalable, meaningful technologies that improve quality, alignment, and outcomes — from large institutions to smaller organizations in need of personalized support.
+          As we grow, Conplexus aims to expand its reach across industries where operational complexity meets human impact.
         </p>
       </section>
 
