@@ -55,7 +55,7 @@ export default function Home() {
           <div className="bg-slate-800 p-6 rounded-xl shadow">
             <h3 className="text-xl font-bold">Coming Soon!</h3>
             <p className="text-slate-400 text-sm mt-2">
-              Stay tuned for more project concepts as we
+              Stay tuned for more project concepts!
             </p>
           </div>
         </div>
