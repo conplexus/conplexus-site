@@ -12,7 +12,7 @@ export default function Home() {
             width={350} // bump width
             height={120} // keep proportion
             priority
-            className="h-12 w-auto md:h-14" // tailwind-controlled height
+            className="h-18 w-auto md:h-20" // tailwind-controlled height
           />
 
           <a href="#about" className="text-conx-green hover:text-white transition">
