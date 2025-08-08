@@ -12,7 +12,7 @@ export default function Home() {
             width={350} // bump width
             height={120} // keep proportion
             priority
-            className="h-18 w-auto md:h-20" // tailwind-controlled height
+            className="h-32 w-auto md:h-40" // tailwind-controlled height
           />
 
           <a href="#about" className="text-conx-green hover:text-white transition">
@@ -22,7 +22,7 @@ export default function Home() {
       </header>
 
       {/* Page Content */}
-      <main className="min-h-screen bg-conx-navy text-white px-6 py-12 pt-28 space-y-24">
+      <main className="min-h-screen bg-conx-navy text-white px-6 py-12 pt-28 space-y-44">
         {/* Hero */}
         <section className="text-center space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold">
