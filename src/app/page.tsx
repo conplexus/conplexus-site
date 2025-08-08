@@ -1,10 +1,17 @@
+import image from 'next/image';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-conx-navy text-white px-6 py-12 space-y-24">
       {/* Sticky */}
       <header className="fixed top-0 left-0 w-full bg-conx-navy/80 backdrop-blur z-50">
         <nav className="max-w-5xl mx-auto flex items-center justify-between p-4">
-          <span className="text-xl font-bold tracking-wide">Conplexus™</span>
+          <Image
+            src="/assets/logo/conplexus-primary.png"
+            alt="Conplexus Logo"
+            width={200}
+            height={60}
+          />
           <a href="#about" className="text-conx-green hover:text-white transition">
             About
           </a>
