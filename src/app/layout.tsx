@@ -7,7 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Conplexus",
   description: "Connecting the Complexities between Us",
+  icons: {
+    icon: "/favicon.ico", // relative to /public
+  },
 };
+
 
 export default function RootLayout({
   children,

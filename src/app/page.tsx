@@ -4,16 +4,11 @@ export default function Home() {
   return (
     <>
       {/* Sticky Header */}
-      <header className="fixed top-0 left-0 w-full bg-conx-navy/80 backdrop-blur z-50">
+      <header className="fixed top-0 left-0 w-full bg-conx-navy/90 z-50">{/* no blur */}
         <nav className="max-w-5xl mx-auto flex items-center justify-between p-4">
-          <Image
-            src="/assets/logo/conplexus-primary.png"
-            alt="Conplexus logo — Connecting the Complexities between Us"
-            width={200}
-            height={60}
-            priority
-            style={{ height: 'auto', width: 'auto', maxWidth: 200 }}
-          />
+          <Image src="/assets/logo/conplexus-primary.png" alt="Conplexus"
+            height={40} width={160} priority className="h-10 w-auto" />
+
           <a href="#about" className="text-conx-green hover:text-white transition">
             About
           </a>
