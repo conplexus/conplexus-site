@@ -6,8 +6,14 @@ export default function Home() {
       {/* Sticky Header */}
       <header className="fixed top-0 left-0 w-full bg-conx-navy/90 z-50">{/* no blur */}
         <nav className="max-w-5xl mx-auto flex items-center justify-between p-4">
-          <Image src="/assets/logo/conplexus-primary.png" alt="Conplexus"
-            height={40} width={160} priority className="h-10 w-auto" />
+          <Image
+            src="/assets/logo/conplexus-primary.png"
+            alt="Conplexus"
+            width={240} // bump width
+            height={80} // keep proportion
+            priority
+            className="h-12 w-auto md:h-14" // tailwind-controlled height
+          />
 
           <a href="#about" className="text-conx-green hover:text-white transition">
             About
