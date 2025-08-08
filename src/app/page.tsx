@@ -1,17 +1,20 @@
-import image from 'next/image';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-conx-navy text-white px-6 py-12 space-y-24">
       {/* Sticky */}
-      <header className="fixed top-0 left-0 w-full bg-conx-navy/80 backdrop-blur z-50">
+      <main className="min-h-screen bg-conx-navy text-white px-6 py-12 pt-28 space-y-24">
         <nav className="max-w-5xl mx-auto flex items-center justify-between p-4">
           <Image
             src="/assets/logo/conplexus-primary.png"
-            alt="Conplexus Logo"
+            alt="Conplexus logo — Connecting the Complexities between Us"
             width={200}
             height={60}
+            priority
+            style={{ height: 'auto', width: 'auto', maxWidth: 200 }}
           />
+
           <a href="#about" className="text-conx-green hover:text-white transition">
             About
           </a>
