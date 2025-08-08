@@ -9,8 +9,8 @@ export default function Home() {
           <Image
             src="/assets/logo/conplexus-primary.png"
             alt="Conplexus"
-            width={240} // bump width
-            height={80} // keep proportion
+            width={350} // bump width
+            height={120} // keep proportion
             priority
             className="h-12 w-auto md:h-14" // tailwind-controlled height
           />
