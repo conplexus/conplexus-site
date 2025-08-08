@@ -7,7 +7,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: { DEFAULT: "#14B8A6", dark: "#0D9488" },
+        conx: {
+          green: "#5EFC8D",
+          navy:  "#273469",
+          gold:  "#E9C46A",
+          // helpful tints
+          navySoft: "#314081",
+        },
+      },
+      boxShadow: {
+        brand: "0 10px 20px -10px rgba(39,52,105,0.5)",
+      },
+      borderRadius: {
+        xl2: "1rem",
       },
     },
   },
