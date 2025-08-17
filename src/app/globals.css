@@ -2,15 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: custom theme vars */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --header-h: 88px;
+  --sidebar-w: 260px;
+} /* base header height */
+@media (min-width: 768px) {
+  :root {
+    --header-h: 96px;
+  }
+} /* md+ a bit taller */
+
+/* Light (default) */
+:root {
+  --bg: #f9fafb;
+  --fg: #171717; /* primary text */
+  --fg-muted: #4b5563; /* secondary text */
+  --border: rgba(0, 0, 0, 0.3);
+  --card: #ffffff;
+  --card-fg: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Dark (when <html class="dark">) */
+.dark {
+  --bg: #1e293b;
+  --fg: #f3f4f6;
+  --fg-muted: #94a3b8; /* softer for dark */
+  --border: rgba(255, 255, 255, 0.16);
+  --card: #273469; /* slightly lifted from bg */
+  --card-fg: #e6e6e6;
+}
+
+/* Apply to document */
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Handy utilities */
+@layer utilities {
+  .text-primary {
+    color: var(--fg);
   }
+  .text-secondary {
+    color: var(--fg-muted);
+  }
+  .border-default {
+    border-color: var(--border);
+  }
+  .bg-card {
+    background-color: var(--card);
+  }
+  .text-card {
+    color: var(--card-fg);
+  }
+}
+body {
+  @apply bg-bg text-foreground;
 }

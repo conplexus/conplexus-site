@@ -1,0 +1,72 @@
+// src/app/conplexus-edu/page.tsx
+export const metadata = {
+  title: "ConplexusEdu™ | Products & Services",
+  description: "Curriculum mapping and accreditation alignment tools.",
+};
+
+export default function EduPage() {
+  return (
+    <div className="container py-10 sm:py-14 lg:py-20 space-y-16 lg:space-y-20">
+      {/* Hero */}
+      <section className="max-w-4xl">
+        <h1 className="text-4xl font-bold text-primary">
+          ConplexusEdu™ Products & Services
+        </h1>
+        <p className="mt-3 text-lg text-secondary">
+          Explore our educational solutions designed to enhance learning and
+          streamline administration.
+        </p>
+      </section>
+
+      {/* CurricuLogic */}
+      <section className="max-w-3xl space-y-4">
+        <h2 className="text-2xl font-semibold text-primary inline-block pb-1 border-b-4 border-conx-blue">
+          CurricuLogic™
+        </h2>
+        <p className="text-secondary">
+          Our flagship platform for curriculum mapping and accreditation
+          management. Currently in development, it helps institutions align
+          programs to standards, generate evidence, and monitor outcomes from
+          program → course → assessment → item.
+        </p>
+        <ul className="list-disc pl-6 text-secondary">
+          <li>Outcome & standards mapping without spreadsheets</li>
+          <li>Program → item analytics with exportable evidence</li>
+          <li>Role-based views (admin, faculty, student)</li>
+        </ul>
+      </section>
+
+      {/* Callout / CTA */}
+      <section className="max-w-3xl">
+        <h2 className="text-2xl font-semibold text-primary inline-block pb-1 border-b-4 border-conx-blue">
+          Interested?
+        </h2>
+        <p className="mt-3 text-secondary">
+          We’re connecting with institutions for early access and pilots. Reach
+          out via our{" "}
+          <a
+            href="/contact"
+            className="underline underline-offset-4 hover:opacity-80"
+          >
+            contact page
+          </a>{" "}
+          or email{" "}
+          <a
+            href="mailto:conplexus.llc@gmail.com"
+            className="underline underline-offset-4 hover:opacity-80"
+          >
+            conplexus.llc@gmail.com
+          </a>
+          .
+        </p>
+
+        <div className="mt-6 bg-card border border-default rounded-2xl p-6">
+          <p className="text-card">
+            Pilot pricing available for early partners. Ask us about LMS
+            integrations and data exports.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
