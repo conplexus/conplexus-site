@@ -36,13 +36,13 @@ export default function EduPage() {
         </ul>
       </section>
 
-      {/* Callout / CTA */}
+      {/* Callout / CTA }
       <section className="max-w-3xl">
         <h2 className="text-2xl font-semibold text-primary inline-block pb-1 border-b-4 border-conx-blue">
           Interested?
         </h2>
-        <p className="mt-3 text-secondary">
-          We’re connecting with institutions for early access and pilots. Reach
+          <p className="mt-3 text-secondary">
+          We’re connecting with institutions for early access. Reach
           out via our{" "}
           <a
             href="/contact"
@@ -58,15 +58,8 @@ export default function EduPage() {
             conplexus.llc@gmail.com
           </a>
           .
-        </p>
-
-        <div className="mt-6 bg-card border border-default rounded-2xl p-6">
-          <p className="text-card">
-            Pilot pricing available for early partners. Ask us about LMS
-            integrations and data exports.
-          </p>
-        </div>
-      </section>
+        </p> 
+      </section> */}
     </div>
   );
 }
