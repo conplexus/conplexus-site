@@ -1,0 +1,7 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- TODO: Replace with production OG image -->
+  <rect width="1200" height="630" fill="#1e3a8a"/>
+  <text x="600" y="315" font-family="Arial, sans-serif" font-size="72" fill="white" text-anchor="middle" dominant-baseline="middle">
+    Conplexus
+  </text>
+</svg>

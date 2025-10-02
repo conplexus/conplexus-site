@@ -17,7 +17,7 @@ export default function ContactPage() {
     return re.test(email);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Validate email
@@ -27,10 +27,27 @@ export default function ContactPage() {
     }
     
     setErrors({});
-    setSubmitted(true);
     
-    // In a real implementation, this would send the form data to a backend
-    console.log("Form submitted:", formData);
+    // TODO: Replace with production Formspree endpoint
+    // Submit to Formspree stub endpoint
+    try {
+      const response = await fetch("https://formspree.io/f/example", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setErrors({ email: "Failed to send message. Please try again." });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setErrors({ email: "Failed to send message. Please try again." });
+    }
   };
 
   const handleChange = (
@@ -94,9 +111,7 @@ export default function ContactPage() {
             </a>
           </p>
           <p className="text-xs text-secondary mt-4">
-            <strong>Privacy note:</strong> We respect your privacy and will only 
-            use your contact information to respond to your inquiry. We do not 
-            share your information with third parties.
+            <strong>Privacy note:</strong> We only use this information to respond to your inquiry.
           </p>
         </div>
 
