@@ -79,7 +79,8 @@ npm run typecheck
 src/
 ├── app/              # Next.js App Router pages
 │   ├── about/        # About page
-│   ├── contact/      # Contact page
+│   ├── contact/      # Contact page (wired to Formspree)
+│   ├── privacy/      # Privacy policy page
 │   ├── services/     # Services page
 │   ├── layout.tsx    # Root layout
 │   └── page.tsx      # Home page
@@ -87,6 +88,12 @@ src/
 └── lib/             # Utility functions and constants
 public/              # Static assets
 ```
+
+### Notes
+
+- **Contact Form**: The contact form is wired to a Formspree stub endpoint (`https://formspree.io/f/example`). Replace this with your production Formspree endpoint before deployment.
+- **Privacy Page**: A minimal privacy policy page is available at `/privacy` explaining how contact submissions and analytics are handled.
+- **Lighthouse CI**: The repository includes a Lighthouse CI workflow that runs performance audits on pull requests with permissive thresholds.
 
 ---
 
