@@ -11,15 +11,19 @@ export default function Header() {
     <header
       className="fixed inset-x-0 top-0 z-50 bg-conx-blue shadow-sm border-b border-white/10"
       style={{ height: "var(--header-h)" }}
+      role="banner"
     >
-      <nav className="container h-full flex items-center justify-between px-4 md:px-6">
+      <nav
+        className="container h-full flex items-center justify-between px-4 md:px-6"
+        aria-label="Main navigation"
+      >
         {/* Left: Mobile menu + Logo */}
         <div className="flex items-center gap-4 md:gap-6">
           <MobileDrawer />
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center" aria-label="Go to homepage">
             <Image
               src="/assets/logo/conplexus-primary.png"
-              alt="Conplexus"
+              alt="Conplexus Logo"
               width={200}
               height={64}
               priority

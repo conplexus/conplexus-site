@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-conx-blue text-white relative z-40">
+    <footer className="bg-conx-blue text-white relative z-40" role="contentinfo">
       <div className="mx-auto max-w-5xl px-6 py-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
@@ -10,7 +10,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <nav className="flex gap-6 text-sm">
+          <nav className="flex gap-6 text-sm" aria-label="Footer navigation">
             <a href="/about" className="hover:underline underline-offset-4">
               About
             </a>
