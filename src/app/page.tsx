@@ -1,3 +1,17 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Conplexus LLC delivers innovative software solutions for healthcare, education, and informatics. Discover CurricuLogic™ and our workflow automation tools.",
+  openGraph: {
+    title: "Conplexus™ | Connecting the Complexities between Us",
+    description:
+      "Innovative software solutions for healthcare, education, and informatics.",
+    url: "https://conplexus.com",
+  },
+};
+
 export default function HomePage() {
   return (
     <div className="container py-10 sm:py-14 lg:py-20 space-y-16 lg:space-y-24">
