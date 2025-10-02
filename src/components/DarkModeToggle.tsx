@@ -38,11 +38,12 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setDark((v) => !v)}
-      className="rounded-md border border-conx-yellow px-3 py-2 text-sm font-medium text-conx-yellow hover:bg-conx-yellow/10 transition"
+      className="rounded-md border border-conx-yellow px-3 py-2 text-sm font-medium text-conx-yellow hover:bg-conx-yellow/10 transition focus:outline-none focus:ring-2 focus:ring-conx-yellow focus:ring-offset-2"
       aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+      aria-pressed={dark}
       title={dark ? "Light mode" : "Dark mode"}
     >
-      {dark ? "Light" : "Dark"}
+      <span aria-hidden="true">{dark ? "Light" : "Dark"}</span>
     </button>
   );
 }

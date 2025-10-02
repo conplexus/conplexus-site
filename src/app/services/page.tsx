@@ -1,5 +1,9 @@
 // src/app/services/page.tsx
-export const metadata = {
+import type { Metadata } from "next";
+import Card from "@/components/Card";
+import Button from "@/components/Button";
+
+export const metadata: Metadata = {
   title: "Services | Conplexus",
   description: "Strategy and engineering services for product-driven teams.",
 };
@@ -18,7 +22,7 @@ export default function ServicesPage() {
 
       {/* Services List */}
       <section className="max-w-3xl space-y-8">
-        <div className="bg-card border border-default rounded-2xl p-6">
+        <Card>
           <h2 className="text-2xl font-semibold text-primary mb-3">
             Product Strategy
           </h2>
@@ -26,9 +30,9 @@ export default function ServicesPage() {
             Align your vision with actionable roadmaps, user research, and 
             metrics that matter for sustainable growth.
           </p>
-        </div>
+        </Card>
 
-        <div className="bg-card border border-default rounded-2xl p-6">
+        <Card>
           <h2 className="text-2xl font-semibold text-primary mb-3">
             Web Engineering
           </h2>
@@ -36,9 +40,9 @@ export default function ServicesPage() {
             Build scalable, performant web applications with modern frameworks 
             and best practices in development.
           </p>
-        </div>
+        </Card>
 
-        <div className="bg-card border border-default rounded-2xl p-6">
+        <Card>
           <h2 className="text-2xl font-semibold text-primary mb-3">
             Technical Advisory
           </h2>
@@ -46,7 +50,7 @@ export default function ServicesPage() {
             Navigate technical decisions with confidence through expert guidance 
             on architecture, tooling, and team processes.
           </p>
-        </div>
+        </Card>
       </section>
 
       {/* CTA */}
@@ -58,13 +62,13 @@ export default function ServicesPage() {
           <p className="mb-6">
             Let&apos;s discuss how we can help your team ship better products.
           </p>
-          <a
+          <Button
             href="/contact"
-            className="inline-block px-6 py-3 bg-white text-conx-blue font-semibold rounded-md hover:bg-gray-100 transition"
-            aria-label="Contact us to discuss your project"
+            variant="secondary"
+            ariaLabel="Contact us to discuss your project"
           >
             Get in touch
-          </a>
+          </Button>
         </div>
       </section>
     </div>

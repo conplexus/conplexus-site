@@ -1,6 +1,6 @@
 // src/app/not-found.tsx
-import Link from "next/link";
 import type { Metadata } from "next";
+import Button from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -19,18 +19,12 @@ export default function NotFound() {
           The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
-          <Link
-            href="/"
-            className="px-6 py-3 bg-conx-blue text-white rounded-md hover:bg-conx-blue/90 transition font-medium"
-          >
+          <Button href="/" variant="primary">
             Go to Homepage
-          </Link>
-          <Link
-            href="/about"
-            className="px-6 py-3 border border-conx-blue text-conx-blue rounded-md hover:bg-conx-blue/5 transition font-medium"
-          >
+          </Button>
+          <Button href="/about" variant="outline">
             Learn About Us
-          </Link>
+          </Button>
         </div>
       </div>
     </div>

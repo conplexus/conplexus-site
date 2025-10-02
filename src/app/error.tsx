@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect } from "react";
-import Link from "next/link";
+import Button from "@/components/Button";
 
 export default function Error({
   error,
@@ -27,18 +27,12 @@ export default function Error({
           this page.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
-          <button
-            onClick={reset}
-            className="px-6 py-3 bg-conx-blue text-white rounded-md hover:bg-conx-blue/90 transition font-medium"
-          >
+          <Button onClick={reset} variant="primary">
             Try Again
-          </button>
-          <Link
-            href="/"
-            className="px-6 py-3 border border-conx-blue text-conx-blue rounded-md hover:bg-conx-blue/5 transition font-medium"
-          >
+          </Button>
+          <Button href="/" variant="outline">
             Go to Homepage
-          </Link>
+          </Button>
         </div>
       </div>
     </div>

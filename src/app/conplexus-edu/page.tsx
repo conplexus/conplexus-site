@@ -1,5 +1,6 @@
 // src/app/conplexus-edu/page.tsx
 import type { Metadata } from "next";
+import { CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "ConplexusEdu™ - Educational Solutions",
@@ -61,10 +62,10 @@ export default function EduPage() {
           </a>{" "}
           or email{" "}
           <a
-            href="mailto:conplexus.llc@gmail.com"
+            href={`mailto:${CONTACT.EMAIL}`}
             className="underline underline-offset-4 hover:opacity-80"
           >
-            conplexus.llc@gmail.com
+            {CONTACT.EMAIL}
           </a>
           .
         </p>

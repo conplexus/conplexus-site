@@ -1,12 +1,14 @@
+import { SITE } from "@/lib/constants";
+
 export default function Footer() {
   return (
     <footer className="bg-conx-blue text-white relative z-40" role="contentinfo">
       <div className="mx-auto max-w-5xl px-6 py-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-lg font-semibold">Conplexus™</p>
+            <p className="text-lg font-semibold">{SITE.NAME}</p>
             <p className="text-sm opacity-80">
-              Connecting the Complexities between Us
+              {SITE.TAGLINE}
             </p>
           </div>
 
@@ -30,7 +32,7 @@ export default function Footer() {
 
         <div className="flex flex-col-reverse gap-4 md:flex-row md:items-center md:justify-between text-xs opacity-80">
           <p>
-            © {new Date().getFullYear()} Conplexus™ LLC. All rights reserved.
+            © {new Date().getFullYear()} {SITE.COPYRIGHT}
           </p>
           <p>Built with Next.js + Vercel</p>
         </div>
