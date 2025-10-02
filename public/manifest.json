@@ -1,0 +1,22 @@
+{
+  "name": "Conplexus™",
+  "short_name": "Conplexus",
+  "description": "Connecting the Complexities between Us",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#273469",
+  "icons": [
+    {
+      "src": "/Icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
