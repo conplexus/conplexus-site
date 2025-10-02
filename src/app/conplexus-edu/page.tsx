@@ -45,13 +45,13 @@ export default function EduPage() {
         </ul>
       </section>
 
-      {/* Callout / CTA }
+      {/* Callout / CTA */}
       <section className="max-w-3xl">
         <h2 className="text-2xl font-semibold text-primary inline-block pb-1 border-b-4 border-conx-blue">
           Interested?
         </h2>
-          <p className="mt-3 text-secondary">
-          We’re connecting with institutions for early access. Reach
+        <p className="mt-3 text-secondary">
+          We&apos;re connecting with institutions for early access. Reach
           out via our{" "}
           <a
             href="/contact"
@@ -67,8 +67,8 @@ export default function EduPage() {
             conplexus.llc@gmail.com
           </a>
           .
-        </p> 
-      </section> */}
+        </p>
+      </section>
     </div>
   );
 }

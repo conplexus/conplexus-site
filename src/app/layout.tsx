@@ -107,7 +107,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
+      <body className="font-sans min-h-screen flex flex-col">
         {/* Skip to main content link for accessibility */}
         <a
           href="#main-content"

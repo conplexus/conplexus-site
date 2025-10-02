@@ -56,6 +56,3 @@ body {
     color: var(--card-fg);
   }
 }
-body {
-  @apply bg-bg text-foreground;
-}
