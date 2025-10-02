@@ -1,7 +1,16 @@
 // src/app/conplexus-edu/page.tsx
-export const metadata = {
-  title: "ConplexusEdu™ | Products & Services",
-  description: "Curriculum mapping and accreditation alignment tools.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ConplexusEdu™ - Educational Solutions",
+  description:
+    "CurricuLogic™ and other educational solutions for curriculum mapping, accreditation alignment, and program management. Streamline your educational administration.",
+  openGraph: {
+    title: "ConplexusEdu™ Products & Services",
+    description:
+      "Curriculum mapping and accreditation management solutions for educational institutions.",
+    url: "https://conplexus.com/conplexus-edu",
+  },
 };
 
 export default function EduPage() {

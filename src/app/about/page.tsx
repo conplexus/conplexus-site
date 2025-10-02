@@ -1,7 +1,16 @@
 // src/app/about/page.tsx
-export const metadata = {
-  title: "About | Conplexus",
-  description: "Why we exist and how we work.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Conplexus LLC - a software and innovation firm simplifying complex systems with tailored digital tools for healthcare, pharmacy, and education.",
+  openGraph: {
+    title: "About Conplexus™",
+    description:
+      "Software and innovation firm focused on simplifying complex systems with tailored digital tools.",
+    url: "https://conplexus.com/about",
+  },
 };
 
 export default function AboutPage() {
