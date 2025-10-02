@@ -1,5 +1,6 @@
 export const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "ConplexusEdu", href: "/conplexus-edu" },
+  { label: "Services", href: "/services" },
+  { label: "Contact", href: "/contact" },
 ];

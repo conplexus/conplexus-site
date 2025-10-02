@@ -1,0 +1,5 @@
+# robots.txt for Conplexus
+User-agent: *
+Allow: /
+
+Sitemap: https://conplexus.com/sitemap.xml
