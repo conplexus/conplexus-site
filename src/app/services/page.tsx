@@ -1,6 +1,7 @@
 // src/app/services/page.tsx
 import type { Metadata } from "next";
 import Card from "@/components/Card";
+import Button from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Services | Conplexus",
@@ -61,13 +62,13 @@ export default function ServicesPage() {
           <p className="mb-6">
             Let&apos;s discuss how we can help your team ship better products.
           </p>
-          <a
+          <Button
             href="/contact"
-            className="inline-block px-6 py-3 bg-white text-conx-blue font-semibold rounded-md hover:bg-gray-100 transition"
-            aria-label="Contact us to discuss your project"
+            variant="secondary"
+            ariaLabel="Contact us to discuss your project"
           >
             Get in touch
-          </a>
+          </Button>
         </div>
       </section>
     </div>

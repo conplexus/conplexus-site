@@ -26,7 +26,9 @@ export default function MobileDrawer() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="lg:hidden rounded-md border border-conx-green px-3 py-2 text-sm font-medium text-conx-green hover:bg-conx-green/10 transition"
+        className="lg:hidden rounded-md border border-conx-green px-3 py-2 text-sm font-medium text-conx-green hover:bg-conx-green/10 transition focus:outline-none focus:ring-2 focus:ring-conx-green focus:ring-offset-2"
+        aria-label="Open navigation menu"
+        aria-expanded={open}
       >
         Menu
       </button>
@@ -72,7 +74,7 @@ export default function MobileDrawer() {
         </nav>
         <button
           onClick={() => setOpen(false)}
-          className="absolute top-3 right-3 rounded-md border border-default px-2 py-1 text-xs text-secondary hover:opacity-80"
+          className="absolute top-3 right-3 rounded-md border border-default px-2 py-1 text-xs text-secondary hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-conx-blue"
           aria-label="Close menu"
         >
           Close

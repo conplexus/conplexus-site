@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Card from "@/components/Card";
+import Button from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -25,13 +26,14 @@ export default function HomePage() {
           We help startups and teams ship reliable, user-centered products.
         </p>
         <div className="mt-8">
-          <a
+          <Button
             href="/contact"
-            className="inline-block px-8 py-4 bg-conx-blue text-white text-lg font-semibold rounded-md hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-conx-blue focus:ring-offset-2"
-            aria-label="Contact us to discuss your project"
+            variant="primary"
+            ariaLabel="Contact us to discuss your project"
+            className="text-lg"
           >
             Contact us
-          </a>
+          </Button>
         </div>
       </section>
 
