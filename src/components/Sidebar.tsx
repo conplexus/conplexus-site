@@ -12,9 +12,9 @@ export default function Sidebar() {
       className="hidden lg:block fixed left-0 top-[var(--header-h)]
              h-[calc(100vh-var(--header-h))] w-[var(--sidebar-w)]
              border-r border-default bg-bg text-primary z-20" // keep sidebar lower
-      aria-label="Primary"
+      aria-label="Sidebar navigation"
     >
-      <nav className="p-4 space-y-1">
+      <nav className="p-4 space-y-1" aria-label="Primary">
         {NAV_ITEMS.map((item) => {
           const active = pathname === item.href;
           return (
