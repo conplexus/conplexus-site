@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Card from "@/components/Card";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -40,26 +41,26 @@ export default function HomePage() {
           What We Are Working On
         </h2>
         <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="bg-card border border-default p-6 rounded-2xl text-card">
+          <Card className="text-card">
             <h3 className="text-xl font-bold text-primary">
               Informatics Tools
             </h3>
             <p className="mt-2 text-sm text-secondary">
               Workflow automations built with Excel, Python, and APIs.
             </p>
-          </div>
-          <div className="bg-card border border-default p-6 rounded-2xl text-card">
+          </Card>
+          <Card className="text-card">
             <h3 className="text-xl font-bold text-primary">CurricuLogic™</h3>
             <p className="mt-2 text-sm text-secondary">
               Curriculum mapping & accreditation alignment for institutions.
             </p>
-          </div>
-          <div className="bg-card border border-default p-6 rounded-2xl text-card">
+          </Card>
+          <Card className="text-card">
             <h3 className="text-xl font-bold text-primary">Coming Soon!</h3>
             <p className="mt-2 text-sm text-secondary">
               Stay tuned for more project concepts!
             </p>
-          </div>
+          </Card>
         </div>
       </section>
     </div>

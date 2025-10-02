@@ -1,5 +1,6 @@
 // src/app/about/page.tsx
 import type { Metadata } from "next";
+import Card from "@/components/Card";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -55,22 +56,22 @@ export default function AboutPage() {
           Impact (to date)
         </h2>
         <div className="mt-4 grid gap-6 sm:grid-cols-3">
-          <div className="bg-card border border-default rounded-2xl p-6 text-center">
+          <Card className="text-center">
             <div className="text-3xl font-bold text-primary">75–90</div>
             <div className="text-secondary text-sm">
               hours saved / user / yr*
             </div>
-          </div>
-          <div className="bg-card border border-default rounded-2xl p-6 text-center">
+          </Card>
+          <Card className="text-center">
             <div className="text-3xl font-bold text-primary">$4.5k–$5.5k</div>
             <div className="text-secondary text-sm">annual value / user*</div>
-          </div>
-          <div className="bg-card border border-default rounded-2xl p-6 text-center">
+          </Card>
+          <Card className="text-center">
             <div className="text-3xl font-bold text-primary">MVP</div>
             <div className="text-secondary text-sm">
               live; pilots in progress
             </div>
-          </div>
+          </Card>
         </div>
         <p className="text-xs text-secondary mt-2">
           *Estimates based on prior VBA/Python tools; treated as projections
