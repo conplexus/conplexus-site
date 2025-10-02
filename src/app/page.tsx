@@ -18,11 +18,20 @@ export default function HomePage() {
       {/* Hero */}
       <section className="text-center space-y-4 sm:space-y-6">
         <h1 className="font-bold text-primary text-4xl sm:text-5xl lg:text-6xl">
-          Welcome to Conplexus™
+          Strategy and engineering for product-driven teams
         </h1>
         <p className="text-secondary text-lg sm:text-xl max-w-2xl mx-auto">
-          Connecting the Complexities between Us
+          We help startups and teams ship reliable, user-centered products.
         </p>
+        <div className="mt-8">
+          <a
+            href="/contact"
+            className="inline-block px-8 py-4 bg-conx-blue text-white text-lg font-semibold rounded-md hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-conx-blue focus:ring-offset-2"
+            aria-label="Contact us to discuss your project"
+          >
+            Contact us
+          </a>
+        </div>
       </section>
 
       {/* Projects */}
