@@ -11,6 +11,10 @@ export default function AboutPage() {
       <section className="max-w-3xl">
         <h1 className="text-4xl font-bold text-primary">About Conplexus™</h1>
         <p className="mt-3 text-lg text-secondary">
+          Founded by Reilly Stewart — Conplexus LLC provides strategy and 
+          engineering support for product-driven teams.
+        </p>
+        <p className="mt-3 text-lg text-secondary">
           Conplexus LLC is a software and innovation firm focused on simplifying
           complex systems with tailored digital tools. Our first SaaS product
           supports curriculum mapping and accreditation workflows for academic
