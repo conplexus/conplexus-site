@@ -25,11 +25,24 @@ jobs:
       
       - name: Build Next.js app
         run: npm run build
-      
+
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli@0.13.x
-      
-      - name: Run Lighthouse CI
-        run: lhci autorun
+
+      - name: Start Next.js production server
+        # Start the server in the background and keep the step running briefly while it boots
+        run: |
+          nohup npm run start &
+          # wait for the server to become available on port 3000
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            if curl -sS http://localhost:3000 >/dev/null; then
+              echo "Server is up" && break
+            fi
+            echo "Waiting for server..."
+            sleep 1
+          done
+
+      - name: Run Lighthouse CI against running site
+        run: lhci autorun --collect.url=http://localhost:3000
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"src/**/*.{js,ts,tsx,jsx,json,css,md}\"",
@@ -33,6 +34,7 @@
     "typescript": "^5",
     "prettier": "^2.8.8",
     "husky": "^8.0.3",
-    "lint-staged": "^14.0.0"
+    "lint-staged": "^14.0.0",
+    "@lhci/cli": "^0.13.0"
   }
 }
