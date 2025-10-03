@@ -27,9 +27,7 @@ export default function HomePage() {
         </h2>
         <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="bg-card border border-default p-6 rounded-2xl text-card">
-            <h3 className="text-xl font-bold text-primary">
-              Informatics Tools
-            </h3>
+            <h3 className="text-xl font-bold text-primary">Informatics Tools</h3>
             <p className="mt-2 text-sm text-secondary">
               Workflow automations built with Excel, Python, and APIs.
             </p>
@@ -42,9 +40,7 @@ export default function HomePage() {
           </div>
           <div className="bg-card border border-default p-6 rounded-2xl text-card">
             <h3 className="text-xl font-bold text-primary">Coming Soon!</h3>
-            <p className="mt-2 text-sm text-secondary">
-              Stay tuned for more project concepts!
-            </p>
+            <p className="mt-2 text-sm text-secondary">Stay tuned for more project concepts!</p>
           </div>
         </div>
       </section>

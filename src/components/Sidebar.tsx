@@ -1,9 +1,9 @@
 // src/components/Sidebar.tsx
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { NAV_ITEMS } from "@/lib/nav";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { NAV_ITEMS } from '@/lib/nav';
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -21,13 +21,13 @@ export default function Sidebar() {
             <Link
               key={item.href}
               href={item.href}
-              aria-current={active ? "page" : undefined}
+              aria-current={active ? 'page' : undefined}
               className={[
-                "block rounded-md px-3 py-2 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(39,52,105,0.45)]",
+                'block rounded-md px-3 py-2 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(39,52,105,0.45)]',
                 active
-                  ? "bg-conx-blue text-white"
-                  : "text-primary hover:bg-black/5 dark:hover:bg-white/10",
-              ].join(" ")}
+                  ? 'bg-conx-blue text-white'
+                  : 'text-primary hover:bg-black/5 dark:hover:bg-white/10',
+              ].join(' ')}
             >
               {item.label}
             </Link>

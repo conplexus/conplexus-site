@@ -1,103 +1,107 @@
-# Conplexus Site 🌐
+# 🌐 Conplexus Website
 
-Official website for **Conplexus LLC** — a forward-thinking informatics, operations, and healthcare technology brand.
+This repository powers the official website for **Conplexus LLC** —
+a technology and consulting company building tools that connect
+**informatics, pharmacy practice, and continuous quality improvement**.
 
-Built with [Next.js](https://nextjs.org) + [TypeScript](https://www.typescriptlang.org) + [Tailwind CSS](https://tailwindcss.com) for speed, scalability, and modern design.
+🌐 Live site: https://conplexus.com
 
 ---
 
-## 🚀 Getting Started (Local Development)
+## Quick start — local development
 
-### Prerequisites
+Prerequisites
 
-- Node.js 18+ and npm
+- Node.js 18+ (LTS recommended)
+- npm (recommended) — pnpm/yarn are optional; adapt commands if you use them
 
-### Installation
+Install dependencies
 
-First, install the dependencies:
-
-```bash
-npm install
+```powershell
+npm ci
 ```
 
-### Development
+Run the dev server (PowerShell)
 
-To run the development server:
-
-```bash
+```powershell
 npm run dev
+# open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
+Build for production
 
-### Building for Production
-
-To create an optimized production build:
-
-```bash
+```powershell
 npm run build
-```
-
-### Running Production Build
-
-To run the production build locally:
-
-```bash
 npm run start
 ```
 
-### Linting
+Useful scripts
 
-To check for code style and quality issues:
-
-```bash
-npm run lint
-```
-
-### Type Checking
-
-To check for TypeScript type errors:
-
-```bash
-npm run typecheck
-```
+- `npm run dev` — start Next.js in development mode
+- `npm run build` — compile a production build
+- `npm run start` — start the production server (after build)
+- `npm run lint` — run Next/Eslint checks
+- `npm run typecheck` — run TypeScript type check (no emit)
 
 ---
 
-## 🛠 Tech Stack
+## Project structure
 
-- **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Deployment**: Vercel (recommended)
-
----
-
-## 📁 Project Structure
-
-```
-src/
-├── app/              # Next.js App Router pages
-│   ├── about/        # About page
-│   ├── contact/      # Contact page (wired to Formspree)
-│   ├── privacy/      # Privacy policy page
-│   ├── services/     # Services page
-│   ├── layout.tsx    # Root layout
-│   └── page.tsx      # Home page
-├── components/       # Reusable React components
-└── lib/             # Utility functions and constants
-public/              # Static assets
-```
-
-### Notes
-
-- **Contact Form**: The contact form is wired to a Formspree stub endpoint (`https://formspree.io/f/example`). Replace this with your production Formspree endpoint before deployment.
-- **Privacy Page**: A minimal privacy policy page is available at `/privacy` explaining how contact submissions and analytics are handled.
-- **Lighthouse CI**: The repository includes a Lighthouse CI workflow that runs performance audits on pull requests with permissive thresholds.
+- `src/app` — Next.js App Router pages and layout
+- `src/components` — UI components (Header, Footer, Sidebar, etc.)
+- `public` — static assets (icons, images, og images)
 
 ---
 
-## 📝 License
+## Contributing
 
-© 2024 Conplexus™ LLC. All rights reserved.
+Small contributions and doc fixes are welcome. Suggested workflow:
 
+1. Fork or create a branch from `main` with a descriptive name (e.g., `fix/readme`)
+2. Make changes, run `pnpm dev` and `pnpm lint` locally
+3. Open a PR with a short description and link to any related issue
+
+If you'd like CI or other automation added, open an issue or request it in the PR.
+
+---
+
+## Deployments
+
+The site is deployed on Vercel (conplexus.com). Connect the GitHub repository to Vercel for previews on PRs.
+
+---
+
+## Notes / TODO
+
+- Consider adding a GitHub Actions workflow to run lint, typecheck, and build on PRs
+- Add Prettier + lint-staged for consistent formatting
+
+---
+
+## Analytics (GA4) — opt-in
+
+This site uses Google Analytics 4 (GA4) only when a visitor explicitly opts in. Analytics are
+loaded dynamically after consent and can be revoked at any time via the "Analytics settings"
+control in the site footer.
+
+Environment variable
+
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` — set this to your GA4 Measurement ID (looks like `G-XXXXXXX`).
+  - Locally: create a `.env.local` at the repo root with:
+
+```powershell
+# .env.local
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXX
+```
+
+    - On Vercel: add `NEXT_PUBLIC_GA_MEASUREMENT_ID` in the project Environment Variables (Preview and Production as needed).
+
+Testing the opt-in flow
+
+- Start the dev server: `npm run dev` and open the site in an Incognito window.
+- The consent banner will prompt for analytics. Accepting will inject the GA script (no data sent until enabled).
+- To verify: open DevTools → Network, filter by `gtag` or `googletagmanager.com/gtag/js` to see the script load. You can also watch console logs for analytics enable/disable messages.
+
+Privacy and data collected
+
+- We only collect aggregated, non-identifying analytics such as page views, referral sources, and basic event data to help improve the site. No PII is intentionally collected by our analytics setup.

@@ -1,13 +1,13 @@
 // src/app/contact/page.tsx
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
   const [errors, setErrors] = useState<{ email?: string }>({});
   const [submitted, setSubmitted] = useState(false);
@@ -19,40 +19,38 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validate email
     if (!validateEmail(formData.email)) {
-      setErrors({ email: "Please enter a valid email address" });
+      setErrors({ email: 'Please enter a valid email address' });
       return;
     }
-    
+
     setErrors({});
-    
+
     // TODO: Replace with production Formspree endpoint
     // Submit to Formspree stub endpoint
     try {
-      const response = await fetch("https://formspree.io/f/example", {
-        method: "POST",
+      const response = await fetch('https://formspree.io/f/example', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
       });
-      
+
       if (response.ok) {
         setSubmitted(true);
       } else {
-        setErrors({ email: "Failed to send message. Please try again." });
+        setErrors({ email: 'Failed to send message. Please try again.' });
       }
     } catch (error) {
-      console.error("Form submission error:", error);
-      setErrors({ email: "Failed to send message. Please try again." });
+      console.error('Form submission error:', error);
+      setErrors({ email: 'Failed to send message. Please try again.' });
     }
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -64,16 +62,14 @@ export default function ContactPage() {
       <div className="container py-10 sm:py-14 lg:py-20">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-8">
-            <h1 className="text-3xl font-bold text-primary mb-4">
-              Thank you for reaching out!
-            </h1>
+            <h1 className="text-3xl font-bold text-primary mb-4">Thank you for reaching out!</h1>
             <p className="text-secondary mb-6">
               We&apos;ve received your message and will get back to you soon.
             </p>
             <button
               onClick={() => {
                 setSubmitted(false);
-                setFormData({ name: "", email: "", message: "" });
+                setFormData({ name: '', email: '', message: '' });
               }}
               className="px-6 py-3 bg-conx-blue text-white font-semibold rounded-md hover:opacity-90 transition"
             >
@@ -98,15 +94,10 @@ export default function ContactPage() {
       {/* Contact Info */}
       <section className="max-w-2xl mx-auto">
         <div className="bg-card border border-default rounded-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold text-primary mb-3">
-            Contact Information
-          </h2>
+          <h2 className="text-xl font-semibold text-primary mb-3">Contact Information</h2>
           <p className="text-secondary mb-2">
-            <strong>Email:</strong>{" "}
-            <a
-              href="mailto:contact@conplexus.example"
-              className="text-conx-blue hover:underline"
-            >
+            <strong>Email:</strong>{' '}
+            <a href="mailto:contact@conplexus.example" className="text-conx-blue hover:underline">
               contact@conplexus.example
             </a>
           </p>
@@ -118,10 +109,7 @@ export default function ContactPage() {
         {/* Contact Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-primary mb-2"
-            >
+            <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
               Name *
             </label>
             <input
@@ -137,10 +125,7 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-primary mb-2"
-            >
+            <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">
               Email *
             </label>
             <input
@@ -152,8 +137,8 @@ export default function ContactPage() {
               onChange={handleChange}
               className="w-full px-4 py-2 border border-default rounded-md bg-bg text-primary focus:outline-none focus:ring-2 focus:ring-conx-blue"
               aria-required="true"
-              aria-invalid={errors.email ? "true" : "false"}
-              aria-describedby={errors.email ? "email-error" : undefined}
+              aria-invalid={errors.email ? 'true' : 'false'}
+              aria-describedby={errors.email ? 'email-error' : undefined}
             />
             {errors.email && (
               <p id="email-error" className="text-red-600 text-sm mt-1">
@@ -163,10 +148,7 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-primary mb-2"
-            >
+            <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">
               Message *
             </label>
             <textarea
