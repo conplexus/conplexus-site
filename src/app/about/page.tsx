@@ -11,8 +11,8 @@ export default function AboutPage() {
       <section className="max-w-3xl">
         <h1 className="text-4xl font-bold text-primary">About Conplexus™</h1>
         <p className="mt-3 text-lg text-secondary">
-          Founded by Reilly Stewart — Conplexus LLC provides strategy and engineering support for
-          product-driven teams.
+          Founded by Reilly Stewart, a PharmD candidate with a strong interest in technological
+          solutions, Lean Six Sigma methodologies, and continuous quality improvement.
         </p>
         <p className="mt-3 text-lg text-secondary">
           Conplexus LLC is a software and innovation firm focused on simplifying complex systems
@@ -27,15 +27,28 @@ export default function AboutPage() {
           Mission
         </h2>
         <p className="text-secondary">
-          Rooted in healthcare, pharmacy, and education, our mission is to create scalable,
-          meaningful technologies that improve quality, alignment, and outcomes — for both large
-          institutions and smaller organizations needing personalized support.
+          Though my background as the founder is in healthcare, Conplexus is designed to be a
+          provider to the health of many industires. Whether healthcare, education, or other
+          sectors, our mission is to empower organizations and individuals by simplifying complex
+          systems through innovative, user-centered software solutions. In recent practice and still
+          being a part of the education system, I am noticing the innovative mindsets that creating
+          landmark changes in the world, but I and others are feeling the gap between what our
+          systems can do versus what they are currently capable of doing. We aim to bridge that gap
+          by delivering tools that are not only effective but also intuitive and aligned with the
+          unique needs of our users.
         </p>
-        <ul className="list-disc pl-6 text-secondary">
-          <li>Patient- and learner-centric by design</li>
-          <li>Lean, measurable impact</li>
-          <li>Privacy & compliance first (FERPA-aligned)</li>
-        </ul>
+        <p className="text-secondary">
+          I believe that one of the ways we can make the gap between what we have access to and what
+          we want to be able to do, is to take a step back and look systems outside of our own, to
+          brainstorm tools, resources, structures, and processes that may not be traditional to our
+          industries. One of these key areas is healthcare, where there is absolutely a mindset of
+          &quot;this is patient-care and is purely clinical with emotional necessity.&quot;, and
+          while this may be true, I believe that our current pharmacy and healthcare systems lack
+          key basics in manufacturing, logistics, and technological advancements, that may be more
+          common to production lines, supply chains, and software development, but could work
+          synergistically to improve the outcomes for patients, providers, and administrations
+          altogether.
+        </p>
       </section>
 
       {/* Impact */}
