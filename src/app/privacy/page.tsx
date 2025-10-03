@@ -50,8 +50,8 @@ export default function PrivacyPage() {
 
         <p className="text-secondary mt-3">
           If you have questions about analytics, contact us at{' '}
-          <a href="mailto:contact@conplexus.example" className="text-conx-blue hover:underline">
-            contact@conplexus.example
+          <a href="mailto:conplexus.llc@gmail.com" className="text-conx-blue hover:underline">
+            conplexus.llc@gmail.com
           </a>
           .
         </p>
@@ -73,8 +73,8 @@ export default function PrivacyPage() {
         <p className="text-secondary">
           If you have questions about this privacy policy or how we handle your information, please
           contact us at{' '}
-          <a href="mailto:contact@conplexus.example" className="text-conx-blue hover:underline">
-            contact@conplexus.example
+          <a href="mailto:conplexus.llc@gmail.com" className="text-conx-blue hover:underline">
+            conplexus.llc@gmail.com
           </a>
           .
         </p>
