@@ -1,10 +1,10 @@
 // src/components/MobileDrawer.tsx
-"use client";
+'use client';
 
-import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { NAV_ITEMS } from "@/lib/nav";
+import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { NAV_ITEMS } from '@/lib/nav';
 
 export default function MobileDrawer() {
   const [open, setOpen] = useState(false);
@@ -16,10 +16,10 @@ export default function MobileDrawer() {
   }, [pathname]);
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === 'Escape') setOpen(false);
     }
-    if (open) document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    if (open) document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
   }, [open]);
 
   return (
@@ -44,12 +44,12 @@ export default function MobileDrawer() {
         role="dialog"
         aria-modal="true"
         className={[
-          "fixed z-50 top-0 left-0 h-full w-72 border-r border-default",
-          "bg-bg text-primary",
-          "transition-transform duration-200",
-          open ? "translate-x-0" : "-translate-x-full",
-        ].join(" ")}
-        style={{ paddingTop: "var(--header-h)" }}
+          'fixed z-50 top-0 left-0 h-full w-72 border-r border-default',
+          'bg-bg text-primary',
+          'transition-transform duration-200',
+          open ? 'translate-x-0' : '-translate-x-full',
+        ].join(' ')}
+        style={{ paddingTop: 'var(--header-h)' }}
       >
         <nav className="p-4 space-y-1">
           {NAV_ITEMS.map((item) => {
@@ -59,11 +59,9 @@ export default function MobileDrawer() {
                 key={item.href}
                 href={item.href}
                 className={[
-                  "block rounded-md px-3 py-2 transition",
-                  active
-                    ? "bg-conx-blue text-white"
-                    : "hover:bg-black/5 dark:hover:bg-white/10",
-                ].join(" ")}
+                  'block rounded-md px-3 py-2 transition',
+                  active ? 'bg-conx-blue text-white' : 'hover:bg-black/5 dark:hover:bg-white/10',
+                ].join(' ')}
               >
                 {item.label}
               </Link>

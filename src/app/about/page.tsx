@@ -1,7 +1,7 @@
 // src/app/about/page.tsx
 export const metadata = {
-  title: "About | Conplexus",
-  description: "Why we exist and how we work.",
+  title: 'About | Conplexus',
+  description: 'Why we exist and how we work.',
 };
 
 export default function AboutPage() {
@@ -11,14 +11,13 @@ export default function AboutPage() {
       <section className="max-w-3xl">
         <h1 className="text-4xl font-bold text-primary">About Conplexus™</h1>
         <p className="mt-3 text-lg text-secondary">
-          Founded by Reilly Stewart — Conplexus LLC provides strategy and 
-          engineering support for product-driven teams.
+          Founded by Reilly Stewart — Conplexus LLC provides strategy and engineering support for
+          product-driven teams.
         </p>
         <p className="mt-3 text-lg text-secondary">
-          Conplexus LLC is a software and innovation firm focused on simplifying
-          complex systems with tailored digital tools. Our first SaaS product
-          supports curriculum mapping and accreditation workflows for academic
-          programs.
+          Conplexus LLC is a software and innovation firm focused on simplifying complex systems
+          with tailored digital tools. Our first SaaS product supports curriculum mapping and
+          accreditation workflows for academic programs.
         </p>
       </section>
 
@@ -28,10 +27,9 @@ export default function AboutPage() {
           Mission
         </h2>
         <p className="text-secondary">
-          Rooted in healthcare, pharmacy, and education, our mission is to
-          create scalable, meaningful technologies that improve quality,
-          alignment, and outcomes — for both large institutions and smaller
-          organizations needing personalized support.
+          Rooted in healthcare, pharmacy, and education, our mission is to create scalable,
+          meaningful technologies that improve quality, alignment, and outcomes — for both large
+          institutions and smaller organizations needing personalized support.
         </p>
         <ul className="list-disc pl-6 text-secondary">
           <li>Patient- and learner-centric by design</li>
@@ -48,9 +46,7 @@ export default function AboutPage() {
         <div className="mt-4 grid gap-6 sm:grid-cols-3">
           <div className="bg-card border border-default rounded-2xl p-6 text-center">
             <div className="text-3xl font-bold text-primary">75–90</div>
-            <div className="text-secondary text-sm">
-              hours saved / user / yr*
-            </div>
+            <div className="text-secondary text-sm">hours saved / user / yr*</div>
           </div>
           <div className="bg-card border border-default rounded-2xl p-6 text-center">
             <div className="text-3xl font-bold text-primary">$4.5k–$5.5k</div>
@@ -58,14 +54,11 @@ export default function AboutPage() {
           </div>
           <div className="bg-card border border-default rounded-2xl p-6 text-center">
             <div className="text-3xl font-bold text-primary">MVP</div>
-            <div className="text-secondary text-sm">
-              live; pilots in progress
-            </div>
+            <div className="text-secondary text-sm">live; pilots in progress</div>
           </div>
         </div>
         <p className="text-xs text-secondary mt-2">
-          *Estimates based on prior VBA/Python tools; treated as projections
-          until validated.
+          *Estimates based on prior VBA/Python tools; treated as projections until validated.
         </p>
       </section>
     </div>

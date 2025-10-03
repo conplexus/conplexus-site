@@ -1,7 +1,7 @@
 // src/app/conplexus-edu/page.tsx
 export const metadata = {
-  title: "ConplexusEdu™ | Products & Services",
-  description: "Curriculum mapping and accreditation alignment tools.",
+  title: 'ConplexusEdu™ | Products & Services',
+  description: 'Curriculum mapping and accreditation alignment tools.',
 };
 
 export default function EduPage() {
@@ -9,12 +9,10 @@ export default function EduPage() {
     <div className="container py-10 sm:py-14 lg:py-20 space-y-16 lg:space-y-20">
       {/* Hero */}
       <section className="max-w-4xl">
-        <h1 className="text-4xl font-bold text-primary">
-          ConplexusEdu™ Products & Services
-        </h1>
+        <h1 className="text-4xl font-bold text-primary">ConplexusEdu™ Products & Services</h1>
         <p className="mt-3 text-lg text-secondary">
-          Explore our educational solutions designed to enhance learning and
-          streamline administration.
+          Explore our educational solutions designed to enhance learning and streamline
+          administration.
         </p>
       </section>
 
@@ -24,10 +22,9 @@ export default function EduPage() {
           CurricuLogic™
         </h2>
         <p className="text-secondary">
-          Our flagship platform for curriculum mapping and accreditation
-          management. Currently in development, it helps institutions align
-          programs to standards, generate evidence, and monitor outcomes from
-          program → course → assessment → item.
+          Our flagship platform for curriculum mapping and accreditation management. Currently in
+          development, it helps institutions align programs to standards, generate evidence, and
+          monitor outcomes from program → course → assessment → item.
         </p>
         <ul className="list-disc pl-6 text-secondary">
           <li>Outcome & standards mapping without spreadsheets</li>
