@@ -4,10 +4,12 @@ export default function HomePage() {
       {/* Hero */}
       <section className="text-center space-y-4 sm:space-y-6">
         <h1 className="font-bold text-primary text-4xl sm:text-5xl lg:text-6xl">
-          Strategy and engineering for product-driven teams
+          Connecting the Complexities between Us
         </h1>
         <p className="text-secondary text-lg sm:text-xl max-w-2xl mx-auto">
-          We help startups and teams ship reliable, user-centered products.
+          Conplexus was established with the goal of streamlining systems, developing software tools
+          tailored to the needs of the user, and to enhance outcomes for both individuals and
+          organizations.
         </p>
         <div className="mt-8">
           <a

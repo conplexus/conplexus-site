@@ -97,8 +97,8 @@ export default function ContactPage() {
           <h2 className="text-xl font-semibold text-primary mb-3">Contact Information</h2>
           <p className="text-secondary mb-2">
             <strong>Email:</strong>{' '}
-            <a href="mailto:contact@conplexus.example" className="text-conx-blue hover:underline">
-              contact@conplexus.example
+            <a href="mailto:conplexus.llc@gmail.com" className="text-conx-blue hover:underline">
+              conplexus.llc@gmail.com
             </a>
           </p>
           <p className="text-xs text-secondary mt-4">
