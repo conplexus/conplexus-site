@@ -59,3 +59,21 @@ body {
 body {
   @apply bg-bg text-foreground;
 }
+
+/* Dark-mode link contrast improvements
+   - Tailwind's `text-conx-blue` is a dark blue used on light backgrounds.
+   - In dark mode that same tone can be too dark against the dark bg (#1e293b).
+   - Override the utility in .dark so links (including mailto:) stay readable.
+*/
+.dark .text-conx-blue,
+.dark a.text-conx-blue,
+.dark a[href^='mailto:'] {
+  /* lighter, accessible blue on dark backgrounds */
+  color: #9ccbff !important;
+}
+
+.dark a.text-conx-blue:hover,
+.dark a[href^='mailto:']:hover {
+  color: #7fb3ff !important;
+  text-decoration: underline;
+}
